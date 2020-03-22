@@ -1,0 +1,46 @@
+﻿
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <partial name="_Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <!-- class menu doc mobile: navbar-nav mr-auto-->
+            <ul class="nav navbar-nav">
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link text-uppercase text-dark" href="@Url.Action("Index", "Home")">Trang chủ</a>
+                </li>
+                <li class="nav-item font-weight-bold dropdown">
+                    <a class="nav-link text-uppercase text-dark dropdown-toggle" id="mnuIntro" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giới thiệu</a>
+                    <div class="dropdown-menu" role="menu" aria-labelledby="mnuIntro">
+                        <a class="dropdown-item text-uppercase" href="@Url.Action("Index", "GeneralInfo", new { moduleName = "" })">THÔNG TIN CHUNG</a>
+                        <a class="dropdown-item text-uppercase" data-link="graphite-map" href="@Url.Action("Index", "GeneralInfo", new { moduleName = "graphite-map" })">MỎ GRAPHITE</a>
+                        <a class="dropdown-item text-uppercase" data-link="graphite-factory" href="@Url.Action("Index", "GeneralInfo", new { moduleName = "graphite-factory" })">NHÀ MÁY CHẾ BIẾN</a>
+                        <a class="dropdown-item text-uppercase" data-link="graphite-company" href="@Url.Action("Index", "GeneralInfo", new { moduleName = "graphite-company" })">NGÀNH NGHỀ HOẠT ĐỘNG</a>
+                        <a class="dropdown-item text-uppercase" href="@Url.Action("Index", "Team")">ĐỘI NGŨ</a>
+                    </div>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link text-uppercase text-dark" href="@Url.Action("Index", "Product")">Sản phẩm</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link text-uppercase text-dark" href="@Url.Action("Index", "News")">Tin tức</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link text-uppercase text-dark" href="@Url.Action("Index", "Partner")">Đối tác</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link text-uppercase text-dark" href="#">Hình ảnh</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link text-uppercase text-dark" href="#">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>

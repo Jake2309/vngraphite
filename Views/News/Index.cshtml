@@ -1,0 +1,179 @@
+﻿
+@{
+    ViewData["Title"] = "Tin tức";
+}
+
+@section Scripts{
+    <script src="~/dist/news-mng.bundle.js"></script>
+}
+
+<div id="news-contain" class="mb-5">
+    <div id="news-header-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/dist/images/news-header.png" class="d-block w-100">
+            </div>
+        </div>
+    </div>
+    <div class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="font-weight-bold my-0 text-uppercase graphite-font-color">Dự án</h3>
+                </div>
+                <div class="col-6 text-right">
+                    <small class="font-weight-bold"><a class="graphite-font-color" href="#">Xem tất cả</a></small>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-4">
+                    <div class="row text-center text-lg-left align-items-lg-center">
+                        <div class="col-12 text-dark">
+                            <img class="w-100" src="~/dist/images/short-news-2.jpg" />
+                        </div>
+                        <div class="col-12 pt-2 text-dark">
+                            <p class="font-weight-bold">Dự án đầu tư xây dựng nhà máy chế biến graphite yên bái</p>
+                            <span>Dự án đầu tư xây dựng nhà máy chế biến Graphite Yên Bái là dự án lớn được cấp giấy chứng nhận đầu tư số 16102100018...</span>
+                        </div>
+                        <div class="col-12 text-dark">
+                            <hr />
+                        </div>
+                        <div class="row col-12 pr-0">
+                            <div class="col">
+                                <small>20/2/2020</small>
+                            </div>
+                            <div class="col text-right p-0">
+                                <a class="text-dark" href="@Url.Action("Detail", "News", new { id = 1 })">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row text-center text-lg-left align-items-lg-center">
+                        <div class="col-12 text-dark">
+                            <img class="w-100" src="~/dist/images/new-small-3.jpg" />
+                        </div>
+                        <div class="col-12 pt-2 text-dark">
+                            <p class="font-weight-bold">Dự án đầu tư xây dựng công trình khai thác mỏ graphite yên bái</p>
+                            <span>Hiện tại, Công ty TNHH Thương mại Ngọc Viễn Đông đang triển khai Dự án khai thác và chế biến Graphite Yên Bái...</span>
+                        </div>
+                        <div class="col-12 text-dark">
+                            <hr />
+                        </div>
+                        <div class="row col-12 pr-0">
+                            <div class="col">
+                                <small>20/2/2020</small>
+                            </div>
+                            <div class="col text-right p-0">
+                                <a class="text-dark" href="@Url.Action("Detail", "News")">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row text-center text-lg-left align-items-lg-center">
+                        <div class="col-12 text-dark">
+                            <img class="w-100" src="~/dist/images/short-news-2.jpg" />
+                        </div>
+                        <div class="col-12 pt-2 text-dark">
+                            <p class="font-weight-bold">Sản lượng chế biến Graphite toàn cầu</p>
+                            <span>Với năng lực sản xuất và chất lượng sản phẩm thỏa mãn yêu cầu của khách hàng, sản phẩm của công ty đã có mặt trên khắp các tỉnh thành Việt Nam và xuất khẩu đi nhiều nước trên thế…</span>
+                        </div>
+                        <div class="col-12 text-dark">
+                            <hr />
+                        </div>
+                        <div class="row col-12 pr-0">
+                            <div class="col">
+                                <small>20/2/2020</small>
+                            </div>
+                            <div class="col text-right p-0">
+                                <a class="text-dark" href="@Url.Action("Detail", "News")">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="font-weight-bold my-0 text-uppercase graphite-font-color">Sự kiện</h3>
+                </div>
+                <div class="col-6 text-right">
+                    <small class="font-weight-bold"><a class="graphite-font-color" href="#">Xem tất cả</a></small>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-4">
+                    <div class="row text-center text-lg-left align-items-lg-center">
+                        <div class="col-12 text-dark">
+                            <img class="w-100" src="~/dist/images/short-news-2.jpg" />
+                        </div>
+                        <div class="col-12 pt-2 text-dark">
+                            <p class="font-weight-bold">Sản lượng chế biến Graphite toàn cầu</p>
+                            <span>Với năng lực sản xuất và chất lượng sản phẩm thỏa mãn yêu cầu của khách hàng, sản phẩm của công ty đã có mặt trên khắp các tỉnh thành Việt Nam và xuất khẩu đi nhiều nước trên thế…</span>
+                        </div>
+                        <div class="col-12 text-dark">
+                            <hr />
+                        </div>
+                        <div class="row col-12 pr-0">
+                            <div class="col">
+                                <small>20/2/2020</small>
+                            </div>
+                            <div class="col text-right p-0">
+                                <a class="text-dark" href="@Url.Action("Detail", "News")">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row text-center text-lg-left align-items-lg-center">
+                        <div class="col-12 text-dark">
+                            <img class="w-100" src="~/dist/images/short-news-2.jpg" />
+                        </div>
+                        <div class="col-12 pt-2 text-dark">
+                            <p class="font-weight-bold">Sản lượng chế biến Graphite toàn cầu</p>
+                            <span>Với năng lực sản xuất và chất lượng sản phẩm thỏa mãn yêu cầu của khách hàng, sản phẩm của công ty đã có mặt trên khắp các tỉnh thành Việt Nam và xuất khẩu đi nhiều nước trên thế…</span>
+                        </div>
+                        <div class="col-12 text-dark">
+                            <hr />
+                        </div>
+                        <div class="row col-12 pr-0">
+                            <div class="col">
+                                <small>20/2/2020</small>
+                            </div>
+                            <div class="col text-right p-0">
+                                <a class="text-dark" href="@Url.Action("Detail", "News")">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row text-center text-lg-left align-items-lg-center">
+                        <div class="col-12 text-dark">
+                            <img class="w-100" src="~/dist/images/short-news-1.jpg" />
+                        </div>
+                        <div class="col-12 pt-2 text-dark">
+                            <p class="font-weight-bold">Sản lượng chế biến Graphite toàn cầu</p>
+                            <span>Với năng lực sản xuất và chất lượng sản phẩm thỏa mãn yêu cầu của khách hàng, sản phẩm của công ty đã có mặt trên khắp các tỉnh thành Việt Nam và xuất khẩu đi nhiều nước trên thế…</span>
+                        </div>
+                        <div class="col-12 text-dark">
+                            <hr />
+                        </div>
+                        <div class="row col-12 pr-0">
+                            <div class="col">
+                                <small>20/2/2020</small>
+                            </div>
+                            <div class="col text-right p-0">
+                                <a class="text-dark" href="@Url.Action("Detail", "News")">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

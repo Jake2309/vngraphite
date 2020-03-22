@@ -1,0 +1,10 @@
+﻿
+$highTechImg: '/dist/images/high-tech-background-black.jpg';
+.high-tech {
+    background-image: url($highTechImg);
+    background-size: cover;
+}
+
+#home-contain .carousel-caption{
+    bottom: 40%;
+}

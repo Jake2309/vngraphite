@@ -1,0 +1,16 @@
+﻿/* Library */
+@import "~bootstrap/scss/bootstrap";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+/* Custom */
+@import 'common.scss';
+@import 'home.scss';
+@import 'general-info.scss';
+@import 'team.scss';
+@import 'product.scss';
+@import 'partner.scss';
+
+body {
+    color: $color;
+    font-family: 'Bai Jamjuree', sans-serif;
+}

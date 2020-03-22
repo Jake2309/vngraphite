@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Tin tức";
+}
+
+@section Scripts{
+    <script src="~/dist/news-mng.bundle.js"></script>
+}
+
+<div id="product-contain" class="mb-5">
+    <div id="partner-header-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/dist/images/news-header.png" class="d-block w-100">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row pt-5">
+            <partial name="_DetailLeft" />
+            <partial name="_DetailRight" />
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="~/dist/images/favicon.png">
+
+    <link href="~/dist/index.bundle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap" rel="stylesheet">
+</head>
+<body id="main">
+    <partial name="_Menu" />
+
+    <div class="container-fluid body-content p-0">
+        @RenderBody()
+        <partial name="_Footer" />
+    </div>
+
+    <script src="~/dist/index.bundle.js"></script>
+    <script src="~/dist/appstrap-script.bundle.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

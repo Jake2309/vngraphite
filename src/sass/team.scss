@@ -1,0 +1,37 @@
+﻿
+.carousel-item.active {
+    /*background: linear-gradient(transparent, #1D2F64 95%);*/
+    background: linear-gradient(rgba(29, 47, 100, 0.7), rgba(29, 47, 100, 0.7));
+}
+
+.carousel-item .slide {
+    position: relative;
+    z-index: -1;
+}
+
+$teamSloganUrl: '/dist/images/sl-bg.png';
+.team-slogan {
+    background: linear-gradient(rgba(0, 70, 156, 0.7), rgba(0, 70, 156, 0.4)), url($teamSloganUrl);
+}
+
+$edge: 150px;
+$edgeBottom: 100px;
+#team-contain .triangle-white-up {
+    width: 0;
+    height: 0;
+    border-left: $edge solid transparent;
+    border-right: $edge solid transparent;
+    border-bottom: $edgeBottom solid white;
+    margin-left: 42%;
+}
+
+#team-meeting-carousel .triangle-contain {
+    /*display: flex;*/
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
+#team-contain .hexagon h1{
+    font-size: 3rem;
+}

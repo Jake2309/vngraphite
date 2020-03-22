@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Việt Nam Graphite";
+}
+
+@section Scripts{
+    <script src="~/dist/home-mng.bundle.js"></script>
+}
+
+<div id="home-contain" class="mb-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/dist/images/can-cau.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="~/dist/images/can-cau.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="~/dist/images/can-cau.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <div class="row">
+                    <div class="col-sm text-left animated-title">
+                        <h5 class="focus-in-contract-bck">NGUỒN TÀI NGUYÊN DỒI DÀO </h5>
+                        <h3 class="font-weight-bold focus-in-contract-bck">TRONG LÒNG ĐẤT</h3>
+                        <a href="#" class="btn btn-xlg btn-white btn-rounded shadow-lg btn-danger bg-op-8 bg-hover-white">Xem video &nbsp;&nbsp;<i class="far fa-play-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content-below" class="high-tech">
+        <div class="text-white py-4">
+            <div class="container">
+                <div class="row text-center text-lg-left align-items-lg-center">
+                    <div class="col-12 col-lg-7 text-white">
+                        <h3 class="font-weight-bold my-0 text-uppercase focus-in-contract-bck">
+                            Công nghệ tiên tiến
+                        </h3>
+                        <p class="font-weight-normal op-9 my-0 focus-in-contract-bck"> Chúng tôi luôn nỗ lực để tạo ra những sản phẩm chất lượng</p>
+                    </div>
+                    <div class="col-12 col-lg-5 py-2 text-lg-right">
+                        <a href="#" class="btn btn-xlg btn-white btn-rounded shadow-lg btn-danger bg-op-8 bg-hover-white">Xem sản phẩm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cần thêm check mobile -->
+    <partial name="_ShortNewsDesktop" />
+</div>
+

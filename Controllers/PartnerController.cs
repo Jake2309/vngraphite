@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace VNGraphiteCore.Controllers
 {
+    [Route("doi-tac")]
     public class PartnerController : Controller
     {
         public IActionResult Index()

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace VNGraphiteCore.Controllers
 {
+    [Route("doi-ngu")]
     public class TeamController : Controller
     {
         public IActionResult Index()

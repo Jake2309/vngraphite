@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         'index': ['./src/index.js', './src/sass/index.scss'],
         'appstrap-script': ['./src/appstrap/js/appstrap-script.js', './src/appstrap/sass/appstrap-theme.scss'],
+        'card-gallery': ['./src/css/cards-gallery.css'],
         'home-mng': ['./src/home.js'],
         'general-info': ['./src/general-info.js'],
         'team-mng': ['./src/team.js'],
@@ -43,7 +44,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.(scss|sass|css)$/,
                 use: [
                     {
                         loader: 'file-loader',

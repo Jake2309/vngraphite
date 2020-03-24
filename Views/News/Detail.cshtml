@@ -1,4 +1,4 @@
-﻿@model NewsModel
+﻿@model NewsDetailVM
 @{
     ViewData["Title"] = "Tin tức";
 }
@@ -17,8 +17,8 @@
     </div>
     <div class="container">
         <div class="row pt-5">
-            <partial name="_DetailLeft" />
-            <partial name="_DetailRight" model="@Model" />
+            <partial name="_DetailLeft" model="@Model.PopularNews" />
+            <partial name="_DetailRight" model="@Model.NewsDetail" />
         </div>
     </div>
 </div>

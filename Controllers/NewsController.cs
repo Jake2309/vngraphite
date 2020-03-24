@@ -42,7 +42,18 @@ namespace VNGraphiteCore.Controllers
             else
                 newsDetail.Images = new List<ImageModels>();
 
-            return View(newsDetail);
+            // Giả lập số lượng view
+            foreach (var news in SampleData.NewsData)
+            {
+                news.ViewCount = rnd.Next(1, 100000);
+            }
+
+            var detailVM = new NewsDetailVM { 
+                NewsDetail = newsDetail,
+                PopularNews = SampleData.NewsData.OrderByDescending(x => x.ViewCount).Take(2).ToList()
+            };
+
+            return View(detailVM);
         }
     }
 }
